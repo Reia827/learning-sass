@@ -13,6 +13,8 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+
+	
 }
 
 .cta {
@@ -25,7 +27,46 @@ body {
   box-shadow: gray 3px 3px 8px;
   background-color: #C0FABE;
   margin: 1rem;
+	
 }
+
+.cta a {
+		text-decoration: none;
+		color: black;
+}
+
+/* add class to html */
+
+a.goth-link {
+		color: #3A612D
+}
+
+a.goth-link:visited {
+		color: #D2F0FA;
+}
+
+a.goth-link:unvisited {
+		color: red;
+}
+
+a.goth-link:hover, a.goth-link:focus, a.goth-link:active {
+		text-shadow: 3px 3px 5px grey;
+}
+
+.impact {
+		text-align: center;
+		font-weight: 700;
+}
+
+p.storybook::first-letter {
+		font-size: 200%;
+}
+
+.highlight-background {
+		background-color: 
+}
+
+/* add class to html */
 
 .cta img {
   max-width: 300px;
@@ -35,3 +76,11 @@ footer {
   background-color: #D2F0FA;
   padding: 1rem;
 }
+
+/*Submit button with text "Sign Up for Email List" should have rounded corners, background of "accent" color, and text color of white. */
+
+input[type="submit"] {
+		border-radius: .5rem;
+		color: white;
+		background-color: #3a612d;
+		}
