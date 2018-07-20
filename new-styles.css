@@ -1,34 +1,25 @@
 /*
-Error: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}"
-        on line 67 of /Users/rachel/Desktop/learning-sass/new-styles.scss
+Error: Invalid CSS after "...e card(#C0FABE)": expected "}", was "text-align: cen..."
+        on line 47 of /Users/rachel/Desktop/learning-sass/new-styles.scss
 
-62: 		font-size: 200%;
-63: }
-64: 
-65: .highlight-background {
-66: 		background-color: 
-67: }
-68: 
-69: /* add class to html *\/
-70: 
-71: .cta img {
-72:   max-width: 300px;
+42:   align-items: center;
+43: }
+44: 
+45: .cta {
+46: 	@include card(#C0FABE)
+47:   text-align: center;
+48:   display: flex;
+49:   flex-flow: column nowrap;
+50:   padding: 1rem;
+51:   justify-content: center;
+52:   align-items: space-around;
 
 Backtrace:
-/Users/rachel/Desktop/learning-sass/new-styles.scss:67
+/Users/rachel/Desktop/learning-sass/new-styles.scss:47
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:679:in `block'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
@@ -48,4 +39,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...ckground-color:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 67 of /Users/rachel/Desktop/learning-sass/new-styles.scss\A \A 62: 		font-size: 200%;\A 63: }\A 64: \A 65: .highlight-background {\A 66: 		background-color: \A 67: }\A 68: \A 69: /* add class to html */\A 70: \A 71: .cta img {\A 72:   max-width: 300px;"; }
+  content: "Error: Invalid CSS after \"...e card(#C0FABE)\": expected \"}\", was \"text-align: cen...\"\A         on line 47 of /Users/rachel/Desktop/learning-sass/new-styles.scss\A \A 42:   align-items: center;\A 43: }\A 44: \A 45: .cta {\A 46: 	@include card(#C0FABE)\A 47:   text-align: center;\A 48:   display: flex;\A 49:   flex-flow: column nowrap;\A 50:   padding: 1rem;\A 51:   justify-content: center;\A 52:   align-items: space-around;"; }

@@ -1,10 +1,37 @@
+
+$accent: #3A612D;
+$highlight: #D2F0FA;
+$brand: purple;
+$base-font: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+//$title-font: "";
+//$callout-font: "";
+
+@mixin card($bg-color) { 
+box-shadow: gray 3px 3px 8px;
+  background-color: $bg-color;
+}
+
+article:first-of-type {
+	@include card($highlight);
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #2D5461;
-  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;;
+  color: $brand;
+  font-family: $base-font;
 }
+
+/* body div {
+	border: 2px gray solid;
+	.classname {
+		
+	}
+ h2 {
+	color: red;
+}
+} */
 
 .cta-container {
   margin: 1rem auto;
@@ -13,21 +40,28 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-
-	
 }
 
 .cta {
+	@include card(#C0FABE)
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
   padding: 1rem;
   justify-content: center;
   align-items: space-around;
-  box-shadow: gray 3px 3px 8px;
-  background-color: #C0FABE;
+  //box-shadow: gray 3px 3px 8px;
+  //background-color: #C0FABE;
   margin: 1rem;
 	
+	img {
+		max-width: 300px;
+	
+	}
+	a {
+		text-decoration: none;
+		color: $brand;
+	}
 }
 
 .cta a {
@@ -37,7 +71,7 @@ body {
 
 /* add class to html */
 
-a.goth-link {
+/*a.goth-link {
 		color: #3A612D
 }
 
@@ -51,6 +85,16 @@ a.goth-link:unvisited {
 
 a.goth-link:hover, a.goth-link:focus, a.goth-link:active {
 		text-shadow: 3px 3px 5px grey;
+} */
+
+a.goth-link {
+	color: $accent;
+	&:vistied {
+		color: $highlight;
+	}
+	&active:, &:focus, &:hover {
+		text-shadow: 2px 2px 8px gray;
+	}
 }
 
 .impact {
@@ -62,9 +106,9 @@ p.storybook::first-letter {
 		font-size: 200%;
 }
 
-.highlight-background {
+/* .highlight-background {
 		background-color: 
-}
+} */
 
 /* add class to html */
 
@@ -82,5 +126,5 @@ footer {
 input[type="submit"] {
 		border-radius: .5rem;
 		color: white;
-		background-color: #3a612d;
+		background-color: $brand;
 		}
